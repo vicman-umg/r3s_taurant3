@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org">
+<head th:replace="layout/layout :: head"></head>
+<body class="sidebar-fixed">
+	<div class="container-scroller" style="height: 100%;">
+		<!-- partial:../../partials/_sidebar.html -->
+		<nav th:replace="layout/encabezado :: navbar1"></nav>
+		<!-- partial -->
+		<div class="page-body-wrapper" style="height: 100%;">
+			<!-- partial:../../partials/_navbar.html -->
+			<nav th:replace="layout/encabezado :: navbar"></nav>
+			<!-- partial -->
+			<div class="main-panel">
+				<div class="content-wrapper mb-0">
+
+					<div class="col-md-8 grid-margin stretch-card"
+						style="margin: 0 auto;">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">
+									Stock</a>
+								</h4>
+								<!-- 								<p class="card-description"> -->
+								<!-- 									Add class -->
+								<!-- 									<code>.badge-{color}</code> -->
+								<!-- 									with -->
+								<!-- 									<code>.badge</code> -->
+								<!-- 								</p> -->
+								<div class="template-demo">
+									<table class="table mb-0">
+										<thead>
+											<tr>
+												<th class="pl-0">Producto</th>
+												<th class="pl-0">Proveedor</th>
+												<th class="pl-0">Sucursal</th>
+												<th class="text-right">Cantidad</th>
+												<th class="text-right">Libras</th>
+												<th class="text-right">Kilos</th>
+												<th class="text-right">Precio</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr th:each="stock:  ${tbStock}">
+												<td class="pl-0" th:text="${stock.tbProducto1.prodNombre}"></td>
+												<td class="pl-0" th:text="${stock.tbProveedor1.provNombre}">Proveedor</td>
+												<td class="pl-0" th:text="${stock.tbSucursal1.sucNombre}">Sucursal</td>
+												<td class="text-right" th:text="${stock.stkCantidad}">Cantidad</td>
+												<td class="text-right" th:text="${stock.stkPesoLibra}"></td>
+												<td class="text-right" th:text="${stock.stkPesoKilo}"></td>
+												<td class="text-right" th:text="${stock.stkPrecio}">Precio</td>
+												<!-- 												<td class="pr-0 text-right"> -->
+												<!-- 													<div class="badge badge-primary">Primary</div> -->
+												<!-- 												</td> -->
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+				<!-- content-wrapper ends -->
+				<!-- partial:partials/../../partials/_footer.html -->
+				<footer th:replace="layout/encabezado :: footer"></footer>
+				<!-- partial -->
+
+			</div>
+		</div>
+		<!-- main-panel ends -->
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

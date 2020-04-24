@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="pos-restaurante-jpa">
+		<class>com.pos.restaurante.app.models.entity.TbAperturaCaja</class>
+		<class>com.pos.restaurante.app.models.entity.TbAppAsignaSucUsu</class>
+		<class>com.pos.restaurante.app.models.entity.TbAppEmpresa</class>
+		<class>com.pos.restaurante.app.models.entity.TbAppPermiso</class>
+		<class>com.pos.restaurante.app.models.entity.TbAppPermisoRol</class>
+		<class>com.pos.restaurante.app.models.entity.TbAppRol</class>
+		<class>com.pos.restaurante.app.models.entity.TbAppTipoMovimiento</class>
+		<class>com.pos.restaurante.app.models.entity.TbAppTipoPago</class>
+		<class>com.pos.restaurante.app.models.entity.TbCliente</class>
+		<class>com.pos.restaurante.app.models.entity.TbDetalleMenu</class>
+		<class>com.pos.restaurante.app.models.entity.TbDetalleMovimiento</class>
+		<class>com.pos.restaurante.app.models.entity.TbMenu</class>
+		<class>com.pos.restaurante.app.models.entity.TbMesa</class>
+		<class>com.pos.restaurante.app.models.entity.TbModulo</class>
+		<class>com.pos.restaurante.app.models.entity.TbMovimiento</class>
+		<class>com.pos.restaurante.app.models.entity.TbProducto</class>
+		<class>com.pos.restaurante.app.models.entity.TbProveedor</class>
+		<class>com.pos.restaurante.app.models.entity.TbRolUsuario</class>
+		<class>com.pos.restaurante.app.models.entity.TbStock</class>
+		<class>com.pos.restaurante.app.models.entity.TbSucursal</class>
+		<class>com.pos.restaurante.app.models.entity.TbTipoAlimento</class>
+		<class>com.pos.restaurante.app.models.entity.TbUsuario</class>
+	</persistence-unit>
+</persistence>

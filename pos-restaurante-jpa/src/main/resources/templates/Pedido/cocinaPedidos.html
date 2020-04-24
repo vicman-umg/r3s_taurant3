@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org">
+<head th:replace="layout/layout :: head"></head>
+<body class="sidebar-fixed">
+	<div class="container-scroller" style="height: 100%;">
+		<!-- partial:../../partials/_sidebar.html -->
+		<nav th:replace="layout/encabezado :: navbar1"></nav>
+		<!-- partial -->
+		<div class="page-body-wrapper" style="height: 100%;">
+			<!-- partial:../../partials/_navbar.html -->
+			<nav th:replace="layout/encabezado :: navbar"></nav>
+			<!-- partial -->
+			<div class="main-panel">
+				<div class="content-wrapper mb-0">
+
+					<div class="card-body">
+						<h3 class="card-title">Ordenes</h3>
+						<div class="table-responsive"></div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-5 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Mesa 1</h4>
+									<div class="template-demo">
+										<table class="table mb-0">
+											<thead>
+												<tr>
+													<th class="pl-0">Comida</th>
+													<th class="text-right">Cantidad</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="pl-0">Hamburguesas</td>
+													<td class="pr-0 text-right">
+														<div class="badge badge-primary badge-pill">3</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="pl-0">Nachos con Queso</td>
+													<td class="pr-0 text-right">
+														<div class="badge badge-primary badge-pill">2</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="pl-0">Licuado de Fresa</td>
+													<td class="pr-0 text-right">
+														<div class="badge badge-primary badge-pill">5</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<div>
+											<button type="button" class="btn btn-success btn-md">Listo</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-5 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Mesa 2</h4>
+									<div class="template-demo">
+										<table class="table mb-0">
+											<thead>
+												<tr>
+													<th class="pl-0">Comida</th>
+													<th class="text-right">Cantidad</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="pl-0">Pescado Frito</td>
+													<td class="pr-0 text-right">
+														<div class="badge badge-primary badge-pill">4</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="pl-0">Coca-cola</td>
+													<td class="pr-0 text-right">
+														<div class="badge badge-primary badge-pill">4</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<div>
+											<button type="button" class="btn btn-success btn-md">Listo</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 grid-margin stretch-card">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Mesa 6</h4>
+									<div class="template-demo">
+										<table class="table mb-0">
+											<thead>
+												<tr>
+													<th class="pl-0">Comida</th>
+													<th class="text-right">Cantidad</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="pl-0">Carne asada</td>
+													<td class="pr-0 text-right">
+														<div class="badge badge-primary badge-pill">1</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="pl-0">Sandwich de Pollo</td>
+													<td class="pr-0 text-right">
+														<div class="badge badge-primary badge-pill">2</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="pl-0">Limonada</td>
+													<td class="pr-0 text-right">
+														<div class="badge badge-primary badge-pill">3</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<div>
+											<button type="button" class="btn btn-success btn-md">Listo</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				<!-- content-wrapper ends -->
+				<!-- partial:partials/../../partials/_footer.html -->
+				<nav th:replace="layout/encabezado :: footer"></nav>
+			</div>
+			<!-- partial -->
+		</div>
+		<!-- main-panel ends -->
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
