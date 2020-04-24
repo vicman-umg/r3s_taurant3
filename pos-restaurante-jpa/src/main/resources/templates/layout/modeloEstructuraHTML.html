@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org">
+<head th:replace="layout/layout :: head"></head>
+<body class="sidebar-fixed">
+	<div class="container-scroller" style="height: 100%;">
+		<!-- partial:../../partials/_sidebar.html -->
+		<nav th:replace="layout/encabezado :: navbar1"></nav>
+		<!-- partial -->
+		<div class="page-body-wrapper" style="height: 100%;">
+			<!-- partial:../../partials/_navbar.html -->
+			<nav th:replace="layout/encabezado :: navbar"></nav>
+			<!-- partial -->
+			<div class="main-panel">
+				<div class="content-wrapper mb-0">
+				
+				
+				</div>
+				<!-- content-wrapper ends -->
+				<!-- partial:partials/../../partials/_footer.html -->
+				<nav th:replace="layout/encabezado :: footer"></nav>
+			</div>
+			<!-- partial -->
+		</div>
+		<!-- main-panel ends -->
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
