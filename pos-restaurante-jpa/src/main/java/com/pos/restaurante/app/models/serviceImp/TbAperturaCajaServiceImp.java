@@ -1,5 +1,6 @@
 package com.pos.restaurante.app.models.serviceImp;
 
+import java.sql.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,6 +49,14 @@ public class TbAperturaCajaServiceImp implements ITbAperturaCajaService {
 	@Transactional(readOnly = true)
 	public Page<TbAperturaCaja> findAll(Pageable pageable) {
 		return tbAperturaCajaDao.findAll(pageable);
+	}
+
+	@Override
+	@Transactional(readOnly = true)
+	public List<TbAperturaCaja> findByUsuarioAndEstadoAndFecha(String idUsuario, String estadoCaja,
+			Date fechaApertura) {
+		return (List<TbAperturaCaja>) tbAperturaCajaDao.findByUsuarioAndEstadoAndFecha(idUsuario, estadoCaja,
+				fechaApertura);
 	}
 
 }

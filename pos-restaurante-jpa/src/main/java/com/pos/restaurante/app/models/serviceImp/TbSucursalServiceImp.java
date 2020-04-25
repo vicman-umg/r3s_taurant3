@@ -13,9 +13,9 @@ import com.pos.restaurante.app.models.service.ITbSucursalService;
 
 @Service
 public class TbSucursalServiceImp implements ITbSucursalService {
-@Autowired
-ITbSucursalDao iTbSucursalDao;
-	
+	@Autowired
+	ITbSucursalDao iTbSucursalDao;
+
 	@Override
 	public List<TbSucursal> findAll() {
 		return iTbSucursalDao.findAll();

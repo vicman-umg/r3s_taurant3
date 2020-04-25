@@ -1,5 +1,6 @@
 package com.pos.restaurante.app.models.service;
 
+import java.sql.Date;
 import java.util.List;
 
 import org.springframework.data.domain.Page;
@@ -18,5 +19,7 @@ public interface ITbAperturaCajaService {
 	public void delete(Integer id);
 
 	public Page<TbAperturaCaja> findAll(Pageable pageable);
+	
+	public List<TbAperturaCaja> findByUsuarioAndEstadoAndFecha(String idUsuario, String estadoCaja, Date fechaApertura);
 
 }
