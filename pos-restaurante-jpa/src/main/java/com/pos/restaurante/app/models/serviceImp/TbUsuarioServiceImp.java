@@ -2,42 +2,45 @@ package com.pos.restaurante.app.models.serviceImp;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
+import com.pos.restaurante.app.models.dao.ITbUsuarioDao;
 import com.pos.restaurante.app.models.entity.TbUsuario;
 import com.pos.restaurante.app.models.service.ITbUsuarioService;
 
+@Service
 public class TbUsuarioServiceImp implements ITbUsuarioService {
+	
+	@Autowired
+	private ITbUsuarioDao tbUsuarioDao;
 
 	@Override
 	public List<TbUsuario> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return tbUsuarioDao.findAll();
 	}
 
 	@Override
 	public void save(TbUsuario tbUsuario) {
-		// TODO Auto-generated method stub
+		tbUsuarioDao.save(tbUsuario);
 
 	}
 
 	@Override
 	public TbUsuario findOne(String id) {
-		// TODO Auto-generated method stub
-		return null;
+		return tbUsuarioDao.findById(id).orElse(null);
 	}
 
 	@Override
 	public void delete(String id) {
-		// TODO Auto-generated method stub
-
+		tbUsuarioDao.deleteById(id);
 	}
 
 	@Override
 	public Page<TbUsuario> findAll(Pageable pageable) {
-		// TODO Auto-generated method stub
-		return null;
+		return tbUsuarioDao.findAll(pageable);
 	}
 
 }

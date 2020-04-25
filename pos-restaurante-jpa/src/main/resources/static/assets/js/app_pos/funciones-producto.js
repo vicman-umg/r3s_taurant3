@@ -1,6 +1,6 @@
-function cerrarNotificacion() {
-	$(".swal-overlay").removeClass("swal-overlay--show-modal");
-}
+//function cerrarNotificacion() {
+//	$(".swal-overlay").removeClass("swal-overlay--show-modal");
+//}
 
 $(document).ready(
 		function() {
